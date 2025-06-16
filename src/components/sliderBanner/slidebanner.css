@@ -1,0 +1,21 @@
+.autoplay-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autoplay-progress svg {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  transform: rotate(-90deg);
+}
+
+.autoplay-progress circle {
+  fill: none;
+  stroke: #4f46e5;
+  stroke-width: 4;
+  stroke-dasharray: 126;
+  stroke-dashoffset: calc(126 * var(--progress));
+  transition: stroke-dashoffset 0.3s;
+}

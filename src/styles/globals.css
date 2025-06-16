@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: #fff;
+  }
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  position: relative;
+}
+
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, #2563EB, transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #2563EB;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+.hollow-splice-text {
+  font-size: 36px;
+  color: transparent;
+  position: relative;
+  -webkit-text-stroke: 1px #ffffff; /* Outline for hollow effect */
+}
+@media only screen and (max-width: 600px) {
+  .hollow-splice-text {
+    font-size: 24px;
+  }
+}
+
+.hollow-splice-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  color: #4fbeef; /* Top half color */
+  overflow: hidden;
+  clip-path: inset(0 0 50% 0); /* Clips the bottom half */
+  -webkit-text-stroke: none; /* Removes outline for this part */
+}
+
+.hollow-splice-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  color: #284999; /* Bottom half color */
+  overflow: hidden;
+  clip-path: inset(50% 0 0 0); /* Clips the top half */
+  -webkit-text-stroke: none; /* Removes outline for this part */
+}

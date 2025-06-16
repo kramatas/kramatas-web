@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none">
+  <pattern id="polkaDots" patternUnits="userSpaceOnUse" width="20" height="20">
+    <circle cx="5" cy="5" r="3" fill="#aaa" />
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#polkaDots)" />
+</svg>
