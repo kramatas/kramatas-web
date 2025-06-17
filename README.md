@@ -3,7 +3,7 @@
 
 # 🚀 Vite + React Single Page Application
 
-This project is a **single-page application** (SPA) built with **React.js** and **Vite**. It is structured for scalability and performance, using modern frontend development practices.
+This project is a single-page application (SPA) built with React.js, Vite, and Tailwind CSS. It features a modern, responsive UI with SVG backgrounds, high-quality design images, and components built using the Hero UI library. For icons, it leverages Heroicons—beautiful, open-source SVG icons designed to pair seamlessly with Tailwind CSS and Hero UI, ensuring a consistent and polished user interface.
 
 ---
 
